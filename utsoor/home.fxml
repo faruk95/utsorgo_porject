@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="675.0" prefWidth="1300.0" style="-fx-background-color: #e6e6e6;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utsoor.HomeController">
+   <children>
+      <Label layoutX="79.0" layoutY="593.0" prefHeight="68.0" prefWidth="606.0" text="\\@Developed by  Faruk-ul-Islam" textFill="#0f12ab">
+         <font>
+            <Font name="Algerian" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="1232.0" layoutY="14.0" mnemonicParsing="false" onAction="#BACKFRMSRCH" style="-fx-background-color: #4e6e76;" text="BACK" textFill="WHITE" />
+      <Label layoutX="21.0" layoutY="34.0" prefHeight="53.0" prefWidth="1154.0" text="Utsorgo is a social volentiary  organizaiton.That trying to establishd utsorgo foundation .The main aim is to make  blood donation camp " textFill="#056eab">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="86.0" prefHeight="53.0" prefWidth="1237.0" text=" to poor in winter season ,Tree plantation in rainy season." textFill="#056eab">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font></Label>
+      <Label layoutX="16.0" layoutY="60.0" prefHeight="53.0" prefWidth="1276.0" text=" camp and give free test of blood group and motivate them to donate blood .There are some other social activities like providing cloths" textFill="#056eab">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

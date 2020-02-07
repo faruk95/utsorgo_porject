@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="762.0" prefWidth="1289.0" style="-fx-background-color: #e6e6e6;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utsoor.SearchController">
+   <children>
+      <Label layoutX="607.0" layoutY="6.0" text="Search" textFill="#312fb9">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="106.0" prefHeight="35.0" prefWidth="177.0" text="Name Wise Search   :" textFill="#1a3399">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="162.0" prefHeight="27.0" prefWidth="169.0" text="Thana Wise Search   :" textFill="#1a3399">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="566.0" layoutY="162.0" prefHeight="29.0" prefWidth="284.0" text="ID Wise Search                             :" textFill="#1a3399">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="564.0" layoutY="107.0" prefHeight="35.0" prefWidth="290.0" text="Age Wise Search                          :" textFill="#1a3399">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="566.0" layoutY="60.0" prefHeight="27.0" prefWidth="284.0" text="Selecting Person For Award         :" textFill="#1a3399">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="namewise" layoutX="262.0" layoutY="111.0" prefHeight="25.0" prefWidth="149.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="thana" layoutX="262.0" layoutY="162.0" prefHeight="30.0" prefWidth="149.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="idwise" layoutX="865.0" layoutY="165.0" prefHeight="29.0" prefWidth="136.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="awardwise" layoutX="865.0" layoutY="60.0" prefHeight="25.0" prefWidth="136.0" promptText="3/5/7/15.....">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="agewise" layoutX="865.0" layoutY="110.0" prefHeight="25.0" prefWidth="136.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button layoutX="431.0" layoutY="111.0" mnemonicParsing="false" onAction="#namewise" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #4e6e76;" text="Search" textFill="#fcf7f7" />
+      <Button layoutX="431.0" layoutY="162.0" mnemonicParsing="false" onAction="#thana" prefHeight="29.0" prefWidth="67.0" style="-fx-background-color: #4e6e76;" text="Search" textFill="#fffbfb" />
+      <Button layoutX="1045.0" layoutY="167.0" mnemonicParsing="false" onAction="#idwise" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #4e6e76;" text="Search" textFill="#f5f0f0" />
+      <Button layoutX="1045.0" layoutY="57.0" mnemonicParsing="false" onAction="#awardwise" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #4e6e76;" text="Search" textFill="#f5f3f3" />
+      <Button layoutX="1045.0" layoutY="107.0" mnemonicParsing="false" onAction="#agewise" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #4e6e76;" text="Search" textFill="#fcf8f8" />
+      <Label layoutX="53.0" layoutY="61.0" prefHeight="27.0" prefWidth="184.0" text="Blood Group Wise    :" textFill="#1a3399">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bloodgroup" layoutX="262.0" layoutY="60.0" prefHeight="25.0" prefWidth="149.0" promptText="A+/B-">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button layoutX="431.0" layoutY="60.0" mnemonicParsing="false" onAction="#bloadgroup" prefHeight="27.0" prefWidth="67.0" style="-fx-background-color: #4e6e76;" text="Search" textFill="#ebe9e9" />
+      <ScrollPane layoutX="47.0" layoutY="408.0" prefHeight="350.0" prefWidth="644.0" AnchorPane.leftAnchor="250.0">
+         <content>
+            <TableView fx:id="TABLE1" prefHeight="350.0" prefWidth="636.0" style="-fx-background-color: #e6e6e6;">
+              <columns>
+                <TableColumn fx:id="ID" prefWidth="27.0" text="ID" />
+                <TableColumn fx:id="NAME" prefWidth="107.0" text="NAME" />
+                  <TableColumn fx:id="PHONE" prefWidth="148.99996948242188" text="PHONE" />
+                  <TableColumn fx:id="BLOOD_GROUP" prefWidth="103.0" text="BLOOD GROUP" />
+                  <TableColumn fx:id="AGE" minWidth="7.0" prefWidth="49.0" text="AGE" />
+                  <TableColumn fx:id="THANA" prefWidth="66.0" text="THANA" />
+                  <TableColumn fx:id="PROFESSION" prefWidth="130.0" text="PROFESSION" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label fx:id="jss" layoutX="47.0" layoutY="351.0" />
+      <Button layoutX="1226.0" layoutY="11.0" mnemonicParsing="false" onAction="#BACKFRMSRCH" style="-fx-background-color: #4e6e76;" text="BACK" textFill="WHITE" />
+      <HBox layoutX="247.0" layoutY="302.0" prefHeight="68.0" prefWidth="644.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#showtable" prefHeight="80.0" prefWidth="170.0" style="-fx-background-color: #4e6e76;" text="SHOWTABLE" textFill="#fcf9f9">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#getprinter" prefHeight="80.0" prefWidth="170.0" style="-fx-background-color: #4e6e76;" text="PRINT" textFill="WHITE" />
+            <Button mnemonicParsing="false" onAction="#BIRTHDAY" prefHeight="80.0" prefWidth="170.0" style="-fx-background-color: #4e6e76;" text="BIRTHDAY" textFill="#f2eeee">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ENABLE" prefHeight="80.0" prefWidth="170.0" style="-fx-background-color: #4e6e76;" text="ENABLE" textFill="#ddd3d3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Label layoutX="987.0" layoutY="383.0" prefHeight="25.0" prefWidth="75.0" text="District" textFill="#1a3399">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="987.0" layoutY="434.0" prefHeight="17.0" prefWidth="67.0" text="thana" textFill="#1a3399">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="987.0" layoutY="489.0" text="Blood Group" textFill="#1a3399">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1042.0" layoutY="325.0" prefHeight="35.0" prefWidth="129.0" text="Master Search" textFill="#1a3399">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="master_district" layoutX="1089.0" layoutY="376.0" prefHeight="30.0" prefWidth="136.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="master_thana" layoutX="1089.0" layoutY="428.0" prefHeight="30.0" prefWidth="136.0" />
+      <TextField fx:id="master_blood_group" layoutX="1089.0" layoutY="491.0" prefHeight="30.0" prefWidth="136.0" />
+      <Button layoutX="1111.0" layoutY="552.0" mnemonicParsing="false" onAction="#master_serch" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #4e6e76;" text="Search" textFill="#f5f3f3" />
+   </children>
+</AnchorPane>

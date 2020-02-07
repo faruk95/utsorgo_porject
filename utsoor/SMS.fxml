@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="675.0" prefWidth="1300.0" style="-fx-background-color: #e6e6e6;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utsoor.SMSController">
+   <children>
+      <Label layoutX="529.0" layoutY="26.0" prefHeight="85.0" prefWidth="469.0" text="EMAIL PROCESSING" textFill="#1a3399">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="121.0" prefHeight="48.0" prefWidth="168.0" text="Birthday                           :" textFill="#1a3399" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="925.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="200.0" prefHeight="57.0" prefWidth="168.0" text="Donating Blood                :" textFill="#1a3399" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="925.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="279.0" prefHeight="35.0" prefWidth="209.0" text="Blood Grouping Program :" textFill="#1a3399" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="925.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="344.0" prefHeight="27.0" prefWidth="180.0" text="Individual                         :" textFill="#1a3399" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="925.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="396.0" prefHeight="69.0" prefWidth="192.0" text="General Email                  :" textFill="#1a3399" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="925.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="469.0" prefHeight="57.0" prefWidth="180.0" text="Notification                     :" textFill="#1a3399" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="925.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox layoutX="905.0" layoutY="119.0" prefHeight="402.0" prefWidth="128.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#getmail" prefHeight="69.0" prefWidth="192.0" style="-fx-background-color: #4e6e76;" text="SEND" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#Afterdonateblood" prefHeight="69.0" prefWidth="192.0" style="-fx-background-color: #4e6e76;" text="SEND" textFill="#ffffffcc">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#get_bgp" prefHeight="69.0" prefWidth="186.0" style="-fx-background-color: #4e6e76;" text="SEND" textFill="#ffffffcc" textOverrun="CLIP">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#get_individual" prefHeight="69.0" prefWidth="192.0" style="-fx-background-color: #4e6e76;" text="SEND" textFill="#ffffffcc" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#get_general_message" prefHeight="69.0" prefWidth="186.0" style="-fx-background-color: #4e6e76;" text="SEND" textFill="#ffffffcc">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#get_enablel" prefHeight="57.0" prefWidth="192.0" style="-fx-background-color: #4e6e76;" text="SEND" textFill="#ffffffcc">
+               <font>
+                  <Font name="Algerian" size="25.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <VBox layoutX="415.0" layoutY="32.0" />
+      <TextField fx:id="individual_id_message" layoutX="546.0" layoutY="323.0" prefHeight="57.0" prefWidth="338.0" promptText="Wishing Text">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="general_message" layoutX="415.0" layoutY="390.0" prefHeight="69.0" prefWidth="469.0" promptText="Write A Text For All Registered Doner">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="enable_notification" layoutX="417.0" layoutY="465.0" prefHeight="57.0" prefWidth="469.0" promptText="Wrinting Wishing Text Those Are Enable For Dontaing Blood">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="bgp_id_name" layoutX="416.0" layoutY="262.0" prefHeight="57.0" prefWidth="463.0" promptText="Put Blood Grouping Program ID">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="dbtext" layoutX="548.0" layoutY="187.0" prefHeight="69.0" prefWidth="331.0" promptText="Write Message">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="get_text" layoutX="417.0" layoutY="121.0" prefHeight="57.0" prefWidth="463.0" promptText="Wishing Text">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="dbid" layoutX="415.0" layoutY="187.0" prefHeight="69.0" prefWidth="117.0" promptText="ID NO">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <TextField fx:id="individual_id" layoutX="415.0" layoutY="323.0" prefHeight="57.0" prefWidth="117.0" promptText="ID NO">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="1223.0" layoutY="20.0" mnemonicParsing="false" onAction="#BACKFRMSRCH" style="-fx-background-color: #4e6e76;" text="BACK" textFill="WHITE" />
+   </children>
+</AnchorPane>
